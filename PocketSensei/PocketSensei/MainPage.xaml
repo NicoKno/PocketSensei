@@ -2,10 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PocketSensei"
+             xmlns:forms="clr-namespace:InTheHand.Forms;assembly=InTheHand.Forms"
              x:Class="PocketSensei.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        <forms:MediaElement x:Name="Media"
+                            HorizontalOptions="Fill" BackgroundColor="Green" VerticalOptions="Center" HeightRequest="180" IsLooping="True"  AreTransportControlsEnabled="true"
+                            Source="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"/>
+    </StackLayout>
 
 </ContentPage>
